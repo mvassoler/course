@@ -39,11 +39,11 @@ public class CourseModel implements Serializable {
     @Column(name = "IMAGE_URL")
     private String imageUrl;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     @Column(name = "CREATION_DATE", nullable = false)
     private LocalDateTime creationDate;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     @Column(name = "LAST_UPATE_DATE", nullable = false)
     private LocalDateTime lastUpdateDate;
 

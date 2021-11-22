@@ -33,7 +33,7 @@ public class LessonModel implements Serializable {
     @Column(name = "VIDEO_URL", nullable = false)
     private String videoUrl;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     @Column(name = "CREATION_DATE", nullable = false)
     private LocalDateTime creationDate;
 

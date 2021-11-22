@@ -32,7 +32,7 @@ public class ModuleModel implements Serializable {
     @Column(name = "DESCRIPTION", nullable = false, length = 250)
     private String description;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     @Column(name = "CREATION_DATE", nullable = false)
     private LocalDateTime creationDate;
 
