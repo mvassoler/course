@@ -19,6 +19,8 @@ spring:
     properties:
       hibernate:
         show_sql: true
+  rabbitmq:
+    addresses: amqps://rngfgdor:Wz7vgH8CbBlFDmAC9Bvk8nRjFoplcDyG@fish.rmq.cloudamqp.com/rngfgdor
 
 logging:
   level:
