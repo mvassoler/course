@@ -14,20 +14,15 @@ import java.util.UUID;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Entity
-@Table(name = "TB_COURSES_USERS")
-public class CourseUserModel implements Serializable {
+@Table(name = "TB_USERS")
+public class UserModel implements Serializable {
 
     private static final long serialVersionUID = 1l;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID")
-    private UUID courseUserId;
-
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    private CourseModel course;
-
-    @Column(nullable = false)
     private UUID userId;
+
 
 }
